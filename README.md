@@ -1,3 +1,5 @@
+# React RoboFriends
+
 This project is a simple app that is built using React and two APIs: [Robohash](https://robohash.org/) and [JSONPlaceholder](https://jsonplaceholder.typicode.com/).
 
 The project consists of a main App container as a parent and CardList and SearchBox components as children which receive the particular state features from the App container in their props. 
