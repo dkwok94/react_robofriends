@@ -1,3 +1,17 @@
+This project is a simple app that is built using React and two APIs: [Robohash](https://robohash.org/) and [JSONPlaceholder](https://jsonplaceholder.typicode.com/).
+
+The project consists of a main App container as a parent and CardList and SearchBox components as children which receive the particular state features from the App container in their props. 
+
+When the application is first loaded, it contacts the JSONPlaceholder API which sends back a list of random people and sets the state with this list of people. It then renders the SearchBox and CardList components and passes various parts of its state to these components. The SearchBox component gets passed an empty searchField property which detects changes when a user types. The CardList component gets passed the user list from the state so that it can create Card components for each user and render those. 
+
+<img src="https://drive.google.com/open?id=1uovvbl_-t-hSup4H89C8e1aZT4BM07PD" />
+
+Thus the user will see a bunch of cards on the screen and when they type anything into the search box, the cards displayed will update according to what is typed due to a filtering function embedded into the App which automatically changes the user list of the state.
+
+<img src="https://drive.google.com/open?id=1gIOvCW-N4PwbDbgCmDQWxhsS5gc0Bsf2" />
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
